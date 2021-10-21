@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>j.s project</title>
+    <style>
+        *{
+            margin: 10px 8%;
+        }
+        h1{
+           text-align: center;
+           text-decoration: underline;
+           font-weight: bold;
+        }
+        img{
+            width: 100%;
+            height: auto;
+            margin: 0%;
+        }
+        p{
+            text-align: justify;
+            width: 100%;
+            margin: 0%;
+            padding: 0%;
+
+        }
+        .colorbg{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            margin: 0px;
+            border: 1px solid black;
+            text-align: right;
+            cursor: pointer;
+        }
+        #wight{
+            background-color: white;
+
+        }
+        #blue{
+            background-color: blue;
+
+        }
+        #aqua{
+            background-color: aquamarine;
+
+        }
+        #black{
+            background-color: black;
+        }
+        #button{
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 class="text">About Us</h1>
+    <div id="button">
+    <span class="colorbg" id="wight" onclick="changeBG('#ffffff')"></span>
+    <span class="colorbg" id="blue" onclick="changeBG('#0000FF')"></span>
+    <span class="colorbg" id="aqua" onclick="changeBG('#00FFFF')"></span>
+    <span class="colorbg" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <img src="https://media.smallbiztrends.com/2019/04/About-Us.png" alt="">
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere doloremque nisi consequuntur explicabo sint amet nobis id, at architecto ipsam rem incidunt! Amet magni dolorum impedit molestiae corporis, praesentium vel maxime nemo sequi asperiores, dolore perferendis voluptatum omnis sit tenetur dolorem, rerum porro! Dolores modi, adipisci, nihil ipsa vero magni impedit, explicabo eius debitis dolor id? Voluptas, mollitia fugit totam nostrum perspiciatis doloremque ducimus nam voluptates quae eligendi consectetur, labore eveniet quasi, suscipit maxime dolorum. Dolorum eveniet id, doloremque expedita corporis, commodi asperiores vel perferendis officia repellendus consectetur eos fugit praesentium non assumenda laboriosam quae? Possimus dolores commodi error sed quod nam repellendus cumque ratione expedita, eum ipsam sapiente adipisci earum hic voluptates. Vel sed animi soluta tempore! Sint, quia laboriosam. Omnis placeat exercitationem sed? Sequi sunt expedita ipsa, dolore fugit, quae maxime eveniet obcaecati quidem eaque provident! Porro, illo distinctio tenetur voluptate vitae nobis aspernatur iste laborum praesentium saepe ea explicabo nostrum soluta iure delectus quo repudiandae ut ducimus reprehenderit nesciunt beatae, officiis dicta. Cum doloribus odio impedit reiciendis hic tempore vero nulla eligendi minima sapiente. Corrupti quisquam, reiciendis ut molestias quos perspiciatis eveniet provident et neque, ad earum eum nam delectus atque facere magnam sapiente excepturi est tempora. Veniam dolor accusamus sunt perferendis illo magnam cupiditate soluta? Delectus iste obcaecati neque voluptatum officiis dignissimos a. Magni delectus culpa sequi, maxime temporibus quos quam nobis quasi qui repellat unde neque nihil sapiente dolore rerum minus, esse mollitia totam ipsa quo inventore aperiam molestias labore vitae? Debitis laudantium assumenda facilis in enim autem corporis, maxime ducimus non sed eligendi magni, vel eos nulla ab molestias ipsam repellat nesciunt fuga! Dolores reiciendis earum eos veritatis atque sed laudantium nulla tempore animi corrupti distinctio aut ab ipsum veniam, tempora consectetur sint explicabo natus illo pariatur maxime, nam alias nobis! Harum, temporibus sint.
+    </p>
+    <script>
+     function changeBG(color){
+        document.body.style.backgroundColor = color; 
+        let clr = document.getElementsByClassName("text");
+        if(color == '#000000') {
+          for(let elm of clr){
+             elm.style.color = "white";
+        }  
+        }else{
+        for(let elm of clr){
+           elm.style.color = "black";
+        }
+      } 
+    }
+    </script>
+</body>
+</html>
